@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    var counter = 0
     fun rollDice() {
 
         val randomNumber = (1..6).random()
