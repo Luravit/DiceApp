@@ -9,28 +9,65 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <ImageView
-        android:id="@+id/img_dice"
-        android:layout_width="209dp"
-        android:layout_height="202dp"
-        android:layout_marginTop="112dp"
-        android:contentDescription="Dice empty"
+        android:id="@+id/img_dice1"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/dice_empty"
         android:src="@drawable/dice_empty"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/img_dice2"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/dice_empty"
+        android:src="@drawable/dice_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_dice3"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/dice_empty"
+        android:src="@drawable/dice_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_dice1" />
+
+    <ImageView
+        android:id="@+id/img_dice4"
+        android:layout_width="131dp"
+        android:layout_height="126dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/dice_empty"
+        android:src="@drawable/dice_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_dice2" />
+
     <Button
         android:id="@+id/btnRoll"
-        android:layout_width="0dp"
+        android:layout_width="392dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginRight="10dp"
-        android:text="Roll"
+        android:layout_marginTop="400dp"
+        android:text="@string/roll"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_dice" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
